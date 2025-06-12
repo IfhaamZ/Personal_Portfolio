@@ -1,8 +1,17 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
-  darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        scrollX: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+      },
+      animation: {
+        scrollX: "scrollX 90s linear infinite",
+      },
+    },
   },
   plugins: [],
 };
