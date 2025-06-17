@@ -7,12 +7,12 @@ import SkillsGrid from "./components/SkillsGrid";
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 dark:text-white">
+    <div className="bg-slate-900 min-h-screen">
       <Navbar />
       <Hero />
       <AboutMe />
-          <HorizontalProjectScroll />
-          <SkillsGrid/>
+      <HorizontalProjectScroll />
+      <SkillsGrid />
     </div>
   );
 }

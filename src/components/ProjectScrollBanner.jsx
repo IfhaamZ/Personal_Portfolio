@@ -19,8 +19,14 @@ const HorizontalProjectScroll = () => {
   }, []);
 
   return (
-    <section id="projects" className="py-12 bg-gray-50 dark:bg-gray-900">
-      <SectionTitle text="My Projects" />
+    <section id="projects" className="py-12 bg-slate-900">
+      <SectionTitle
+        title="Projects"
+        showDecorations={true}
+        showBackground={true}
+        alignment="center"
+        size="medium"
+      />
 
       <div
         className="relative w-screen max-w-full overflow-hidden px-4"

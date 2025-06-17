@@ -3,8 +3,14 @@ import SectionTitle from "./SectionTitle";
 
 const AboutMe = () => {
   return (
-    <section id="about" className="py-20 px-6 bg-gray-100 dark:bg-gray-900">
-      <SectionTitle text="About Me" />
+    <section id="about" className="py-20 px-6 bg-slate-900">
+      <SectionTitle
+        title="About Me"
+        showDecorations={true}
+        showBackground={true}
+        alignment="center"
+        size="medium"
+      />
 
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10 backdrop-blur-md bg-white/20 dark:bg-white/10 border border-white/30 rounded-xl shadow-2xl px-8 py-10 transition-all duration-300">
         {/* Text */}
@@ -30,9 +36,10 @@ const AboutMe = () => {
 
         {/* Avatar */}
         <div className="flex-1 flex justify-center">
-                  <img src="https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortWaved&accessoriesType=Blank&hairColor=Black&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Happy&eyebrowType=Default&mouthType=Smile&skinColor=Brown"
-                    alt="AboutMe"
-                  />
+          <img
+            src="https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortWaved&accessoriesType=Blank&hairColor=Black&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Happy&eyebrowType=Default&mouthType=Smile&skinColor=Brown"
+            alt="AboutMe"
+          />
         </div>
       </div>
     </section>

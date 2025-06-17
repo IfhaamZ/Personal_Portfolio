@@ -5,8 +5,14 @@ import SectionTitle from "./SectionTitle";
 
 const SkillsGrid = () => {
   return (
-    <section id="skills" className="py-20 bg-gray-900 text-white">
-      <SectionTitle text="My Skills"/>
+    <section id="skills" className="py-20 bg-slate-900 text-white">
+      <SectionTitle
+        title="My Skills"
+        showDecorations={true}
+        showBackground={true}
+        alignment="center"
+        size="medium"
+      />
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 max-w-6xl mx-auto">
         {Object.entries(skills).map(([category, skillList]) => (
           <SkillCategoryCard

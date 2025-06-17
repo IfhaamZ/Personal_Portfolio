@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <motion.section
       id="home"
-      className="relative min-h-screen pt-20 pb-24 px-6 md:px-16 flex flex-col-reverse md:flex-row items-center justify-center gap-10 text-white overflow-hidden bg-gray-900"
+      className="relative min-h-screen pt-20 pb-24 px-6 md:px-16 flex flex-col-reverse md:flex-row items-center justify-center gap-10 text-white overflow-hidden bg-slate-900"
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
@@ -24,7 +24,7 @@ const Hero = () => {
 
       {/* Text Section */}
       <div className="z-10 max-w-xl md:flex-1 text-center md:text-left">
-        <h1 className="text-4xl sm:text-5xl font-bold mb-4">
+        <h1 className="text-5xl sm:text-5xl font-bold mb-4">
           Hi, I'm <span className="text-pink-500 drop-shadow-lg">Ifhaam</span>
         </h1>
         <p className="text-lg sm:text-xl text-gray-300 mb-6">
@@ -60,7 +60,7 @@ const Hero = () => {
       </div>
 
       {/* Lottie Animation */}
-      <div className="z-10 w-[280px] sm:w-[320px] md:w-[380px] lg:w-[500px] mx-auto md:mx-0">
+      <div className="z-10 w-[380px] sm:w-[350px] md:w-[380px] lg:w-[600px] mx-auto md:mx-0">
         <Lottie animationData={devAnimation} loop autoplay />
       </div>
     </motion.section>
