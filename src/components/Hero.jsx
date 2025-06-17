@@ -7,7 +7,7 @@ import devAnimation from "../assets/Lottie_Hero.json";
 const Hero = () => {
   return (
     <motion.section
-      id="hero"
+      id="home"
       className="relative min-h-screen pt-20 pb-24 px-6 md:px-16 flex flex-col-reverse md:flex-row items-center justify-center gap-10 text-white overflow-hidden bg-gray-900"
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}

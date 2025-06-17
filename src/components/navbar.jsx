@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
@@ -7,71 +7,78 @@ const sections = ["home", "about", "projects", "skills"];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+    return () => setIsMounted(false);
+  }, []);
 
   return (
-    <>
+    <div className="fixed top-4 right-20 z-[20]">
       {/* Toggle Button */}
-      <div className="fixed top-4 right-4 z-[60]">
-        <button
-          onClick={() => setIsOpen((prev) => !prev)}
-          className={`w-14 h-14 flex items-center justify-center rounded-full transition-all duration-300 
-            ${
-              isOpen
-                ? "bg-rose-500 hover:bg-rose-600"
-                : "bg-white/20 hover:bg-white/30"
-            } 
-            backdrop-blur-md text-white shadow-md`}
+      <button
+        onClick={() => setIsOpen((prev) => !prev)}
+        className={`absolute w-14 h-14 flex items-center justify-center rounded-full transition-all duration-300 
+          ${
+            isOpen
+              ? "bg-gradient-to-br from-rose-500 to-purple-600 hover:from-rose-600 hover:to-purple-700"
+              : "bg-white/20 hover:bg-white/30"
+          } 
+          backdrop-blur-lg text-white shadow-lg z-50`}
+      >
+        <motion.div
+          key={isOpen ? "x" : "bars"}
+          initial={{ rotate: 90, opacity: 0 }}
+          animate={{ rotate: 0, opacity: 1 }}
+          exit={{ rotate: -90, opacity: 0 }}
+          transition={{ duration: 0.2 }}
         >
-          <motion.div
-            key={isOpen ? "x" : "bars"}
-            initial={{ rotate: 90, opacity: 0 }}
-            animate={{ rotate: 0, opacity: 1 }}
-            exit={{ rotate: -90, opacity: 0 }}
-            transition={{ duration: 0.25 }}
-          >
-            {isOpen ? (
-              <FaTimes className="text-xl" />
-            ) : (
-              <FaBars className="text-xl" />
-            )}
-          </motion.div>
-        </button>
-      </div>
+          {isOpen ? (
+            <FaTimes className="text-2xl" />
+          ) : (
+            <FaBars className="text-2xl" />
+          )}
+        </motion.div>
+      </button>
 
-      {/* Slide-out Navbar */}
+      {/* Expanding Navbar */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ x: 80, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            exit={{ x: 80, opacity: 0 }}
-            transition={{ type: "spring", stiffness: 250, damping: 20 }}
-            className="fixed top-4 right-4 z-50 h-14 px-6 flex items-center gap-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-full shadow-xl pr-20 overflow-hidden"
+            initial={{ width: 50, opacity: 0 }}
+            animate={{ width: "auto", opacity: 1 }}
+            exit={{ width: 50, opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="absolute right-5 h-14 flex items-center bg-gradient-to-r from-purple-900/40 to-rose-900/40 backdrop-blur-lg border border-white/30 rounded-full shadow-xl overflow-hidden"
           >
-            {/* Nav Links */}
-            <nav className="flex gap-4 text-sm sm:text-base">
+            <motion.nav
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="flex gap-1 sm:gap-3 px-4"
+            >
               {sections.map((section) => (
                 <ScrollLink
                   key={section}
                   to={section}
                   smooth={true}
-                  spy={false}
-                  offset={-100}
+                  spy={isMounted} // Only enable spy after mount
+                  offset={-80} // Adjust this based on your header height
                   duration={500}
-                  activeClass="active"
-                  onClick={() => {
-                    setTimeout(() => setIsOpen(false), 400); // ✅ Delay fixes spyCallbacks error
-                  }}
-                  className="text-white capitalize px-5 py-1 rounded-full hover:bg-purple-600 transition-all duration-300 cursor-pointer"
+                  activeClass="active-nav-item"
+                  onClick={() => setTimeout(() => setIsOpen(false), 400)}
+                  className="text-white/90 hover:text-white font-medium uppercase tracking-wider text-sm sm:text-base px-4 py-2 rounded-full transition-all duration-300 cursor-pointer hover:bg-white/20 hover:shadow-inner"
+                  ignoreCancelEvents={true}
                 >
                   {section}
                 </ScrollLink>
               ))}
-            </nav>
+            </motion.nav>
           </motion.div>
         )}
       </AnimatePresence>
-    </>
+    </div>
   );
 };
 
