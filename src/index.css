@@ -24,3 +24,23 @@
   html {
     scroll-behavior: smooth;
   }
+
+  body{
+    overflow-x: hidden;
+    overscroll-behavior: none;
+  }
+
+  @layer utilities {
+    .animate-orbit {
+      animation: orbit 20s linear infinite;
+    }
+  
+    @keyframes orbit {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  }

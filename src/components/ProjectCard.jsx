@@ -3,7 +3,17 @@ import { FaGithub } from "react-icons/fa";
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className="min-w-[400px] max-w-[400px] min-h-[400px] max-h-[525px] mx-4 relative rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 bg-gradient-to-br from-white/70 via-white/60 to-white/50 dark:from-gray-800/70 dark:via-gray-700/60 dark:to-gray-600/50 border border-white/20 backdrop-blur-md hover:shadow-[0_0_20px_rgba(147,51,234,0.4)]">
+    <div
+      className="min-w-[400px] max-w-[400px] min-h-[400px] max-h-[525px] mx-4 relative rounded-xl overflow-hidden
+      shadow-md transition duration-300 transform hover:-translate-y-2 hover:shadow-2xl
+      bg-gradient-to-br from-white/60 via-white/40 to-white/30 dark:from-gray-800/60 dark:via-gray-700/40 dark:to-gray-600/30
+      border border-white/20 backdrop-blur-xl hover:backdrop-blur-2xl"
+    >
+      {/* Inner glow layer */}
+      <div
+        className="absolute inset-0 rounded-xl bg-white/10 dark:bg-gray-300/5 
+        blur-xl opacity-0 group-hover:opacity-20 transition-all duration-500 pointer-events-none"
+      />
       {/* Image */}
       <img
         src={project.image}

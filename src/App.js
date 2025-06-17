@@ -3,6 +3,7 @@ import Navbar from "./components/navbar";
 import HorizontalProjectScroll from "./components/ProjectScrollBanner";
 import Hero from "./components/Hero";
 import AboutMe from "./components/AboutMe";
+import SkillsGrid from "./components/SkillsGrid";
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       <Navbar />
       <Hero />
       <AboutMe />
-      <HorizontalProjectScroll />
+          <HorizontalProjectScroll />
+          <SkillsGrid/>
     </div>
   );
 }

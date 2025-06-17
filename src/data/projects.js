@@ -19,9 +19,25 @@ const projects = [
     title: "Restaurant Booking & Management App",
     description:
       "A restaurant application that allows users to browse menus, make table reservations, manage bookings, and view reservation history. Includes real-time table availability, confirmation notifications, and admin features for managing menus and seating.",
-    tech: ["Java", "JSP", "SQL", "Azure", "Maven"],
+    tech: ["Java", "JSP", "MySQL", "Azure", "Maven"],
     github: "https://github.com/IfhaamZ/RestaurantApp.git",
     image: "/images/RMA.png",
+  },
+  {
+    title: "Car Rentals Website",
+    description:
+      "A full-featured car rental platform that allows users to browse available vehicles, book cars for specific dates, and manage reservations seamlessly. The app supports authentication, real-time vehicle availability tracking, and dynamic pricing based on rental duration",
+    tech: ["PHP", "JavaScript", "AWS"],
+    github: "https://github.com/IfhaamZ/CarRental.git",
+    image: "/images/CRW.png",
+  },
+  {
+    title: "IoT Marketplace & Management Platform",
+    description:
+      "A dual-role application designed for both customers and staff. Customers can browse and purchase a range of IoT devices, while staff  manage inventory, process orders, and update product details. The platform features secure authentication, order history tracking, and access control. ",
+    tech: ["Java", "JavaScript", "JSP", "MySQL", "Maven"],
+    github: "https://github.com/IfhaamZ/IoT_Bay.git",
+    image: "/images/IOT.png",
   },
 ];
 
