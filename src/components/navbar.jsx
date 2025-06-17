@@ -23,7 +23,7 @@ const Navbar = () => {
           ${
             isOpen
               ? "bg-gradient-to-br from-rose-500 to-purple-600 hover:from-rose-600 hover:to-purple-700"
-              : "bg-white/20 hover:bg-white/30"
+              : "bg-gradient-to-br from-rose-500 to-purple-600 hover:from-rose-600 hover:to-purple-700"
           } 
           backdrop-blur-lg text-white shadow-lg z-50`}
       >
