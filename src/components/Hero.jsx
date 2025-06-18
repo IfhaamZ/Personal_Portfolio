@@ -28,8 +28,8 @@ const Hero = () => {
           Hi, I'm <span className="text-pink-500 drop-shadow-lg">Ifhaam</span>
         </h1>
         <p className="text-lg sm:text-xl text-gray-300 mb-6">
-          A Full-Stack Developer passionate about building clean, functional,
-          and user-focused web applications.
+          Full-Stack Developer | Data & ML Enthusiast | UI/UX &
+          Product Design Thinker
         </p>
         <div className="flex justify-center md:justify-start gap-4 flex-wrap">
           <a
