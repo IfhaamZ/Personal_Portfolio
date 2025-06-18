@@ -3,7 +3,7 @@ import SectionTitle from "./SectionTitle";
 
 const AboutMe = () => {
   return (
-    <section id="about" className="py-20 px-6 bg-slate-900">
+    <section id="about" className="py-11 px-6 bg-slate-900">
       <SectionTitle
         title="About Me"
         showDecorations={true}
