@@ -6,6 +6,7 @@ const projects = [
     tech: ["C#", ".NET", "SQL"],
     github: "https://github.com/IfhaamZ/PersonalFinanceTrackerApp.git",
     image: "/images/PFT.png",
+    linkType: "github",
   },
   {
     title: "Library Management App",
@@ -14,6 +15,7 @@ const projects = [
     tech: ["ReactJS", "Java", "SpringBoot", "SQL"],
     github: "https://github.com/IfhaamZ/FullStack-Library-App.git",
     image: "/images/LMA.png",
+    linkType: "github",
   },
   {
     title: "Restaurant Booking & Management App",
@@ -22,6 +24,17 @@ const projects = [
     tech: ["Java", "JSP", "MySQL", "Azure", "Maven"],
     github: "https://github.com/IfhaamZ/RestaurantApp.git",
     image: "/images/RMA.png",
+    linkType: "github",
+  },
+  {
+    title: "House Price Prediction: Linear Regression",
+    description:
+      "This project compares three regression models, simple linear regression, multiple linear regression, and regularized regression to predict house prices. It involves comprehensive data preprocessing, cross-validation, residual analysis, and model evaluation. ",
+    tech: ["Python", "Pandas", "Numpy", "Sklearn"],
+    github:
+      "https://colab.research.google.com/drive/1fFYO8VA9qbr-5fRucSOCkbUKOWaKzQVa",
+    image: "/images/HPP.png",
+    linkType: "colab",
   },
   {
     title: "Car Rentals Website",
@@ -30,6 +43,7 @@ const projects = [
     tech: ["PHP", "JavaScript", "AWS"],
     github: "https://github.com/IfhaamZ/CarRental.git",
     image: "/images/CRW.png",
+    linkType: "github",
   },
   {
     title: "IoT Marketplace & Management Platform",
@@ -38,6 +52,7 @@ const projects = [
     tech: ["Java", "JavaScript", "JSP", "MySQL", "Maven"],
     github: "https://github.com/IfhaamZ/IoT_Bay.git",
     image: "/images/IOT.png",
+    linkType: "github",
   },
 ];
 

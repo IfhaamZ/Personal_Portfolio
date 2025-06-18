@@ -1,5 +1,6 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
+import { SiGooglecolab } from "react-icons/si";
 
 const ProjectCard = ({ project }) => {
   return (
@@ -47,10 +48,16 @@ const ProjectCard = ({ project }) => {
             href={project.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-purple-500 hover:text-purple-400 text-3xl"
-            title="View on GitHub"
+            className={`text-3xl transition ${
+              project.linkType === "colab"
+                ? "text-[#F9AB00] hover:text-yellow-400"
+                : "text-purple-500 hover:text-purple-400"
+            }`}
+            title={`View on ${
+              project.linkType === "colab" ? "Google Colab" : "GitHub"
+            }`}
           >
-            <FaGithub />
+            {project.linkType === "colab" ? <SiGooglecolab /> : <FaGithub />}
           </a>
         </div>
       </div>
