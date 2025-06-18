@@ -16,15 +16,15 @@ const AboutMe = () => {
         {/* Text */}
         <div className="text-center md:text-left flex-1">
           <p className="text-base sm:text-lg text-gray-800 dark:text-gray-200 leading-relaxed">
-            Hi, I’m Ifhaam — a developer, designer, and data enthusiast who
+            Hi, I'm Ifhaam — a developer, designer, and data enthusiast who
             loves building things that matter. I recently wrapped up my BIT
-            degree, majoring in Full-Stack Development and Data Science — a
+            degree, majoring in Full-Stack Development and Data Science, a
             combo that lets me bridge the gap between how things look, how they
             work, and how data can make them smarter.
             <br />
             <br />
             On the development side, I build full-stack applications from the
-            ground up — front-end, back-end, databases — all with an eye for
+            ground up, frontend, backend, databases, all with an eye for
             clean code and even cleaner UX. I'm big on UI/UX design and product
             thinking, always asking: How does this feel for the user? What
             problem are we solving?
@@ -34,7 +34,7 @@ const AboutMe = () => {
             about data. I love diving into messy datasets, finding patterns, and
             using machine learning to build smart systems that adapt and
             improve. Whether it's predictive models, dashboards, or data-driven
-            features in apps — I enjoy turning insights into real-world impact.
+            features in apps, I enjoy turning insights into real-world impact.
           </p>
         </div>
 
