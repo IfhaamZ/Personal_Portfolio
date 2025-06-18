@@ -16,21 +16,22 @@ const AboutMe = () => {
         {/* Text */}
         <div className="text-center md:text-left flex-1">
           <p className="text-base sm:text-lg text-gray-800 dark:text-gray-200 leading-relaxed">
-            Hey! I'm Ifhaam, a developer, designer, and data storyteller driven
-            by curiosity and a love for creating things that matter. My journey
-            blends code with creativity. From building sleek UIs that feel alive
-            to crafting smart full-stack apps that solve real problems, I care
-            deeply about the details and the bigger picture.
+            Hi, I’m Ifhaam — a developer, designer, and data enthusiast who
+            loves building things that matter. I recently wrapped up my BIT
+            degree, majoring in Full-Stack Development and Data Science — a
+            combo that lets me bridge the gap between how things look, how they
+            work, and how data can make them smarter.
             <br />
             <br />
-            I'm currently studying a unique combo of Business and IT, which
-            helps me think not just like a developer, but also like a
-            strategist, a user, and a product thinker. Whether it's optimizing
-            performance, creating intuitive UX, or presenting insights that
-            drive action, I'm all in. Outside of tech, I'm constantly learning,
-            building side projects, teaching myself new frameworks, or reading
-            up on product design. I believe great work comes from staying
-            curious, staying human, and never settling.
+            On the development side, I build full-stack applications from the
+            ground up — front-end, back-end, databases — all with an eye for
+            clean code and even cleaner UX. I’m big on UI/UX design and product
+            thinking, always asking: How does this feel for the user? What
+            problem are we solving? At the same time, I’m just as passionate
+            about data. I love diving into messy datasets, finding patterns, and
+            using machine learning to build smart systems that adapt and
+            improve. Whether it's predictive models, dashboards, or data-driven
+            features in apps — I enjoy turning insights into real-world impact.
           </p>
         </div>
 

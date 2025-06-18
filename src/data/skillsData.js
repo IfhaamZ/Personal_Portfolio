@@ -18,10 +18,6 @@ export const skills = {
   ],
   Frameworks: [
     {
-      name: "OpenCV",
-      iconPath: "/assets/skills/opencv.svg",
-    },
-    {
       name: ".NET",
       iconPath: "/assets/skills/dotnet.svg",
     },
@@ -41,5 +37,16 @@ export const skills = {
   Tools: [
     { name: "Git", iconPath: "/assets/skills/git.svg" },
     { name: "Postman", iconPath: "/assets/skills/postman.svg" },
+  ],
+  Libraries: [
+    { name: "Pandas", iconPath: "/assets/skills/pandas.svg" },
+    { name: "Pytorch", iconPath: "/assets/skills/pytorch.svg" },
+    { name: "Scikit-learn", iconPath: "/assets/skills/scikit-learn.svg" },
+    { name: "TensorFlow", iconPath: "/assets/skills/tensorflow.svg" },
+    { name: "Numpy", iconPath: "/assets/skills/numpy.svg" },
+    {
+      name: "OpenCV",
+      iconPath: "/assets/skills/opencv.svg",
+    },
   ],
 };
