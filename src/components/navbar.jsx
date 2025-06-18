@@ -64,7 +64,7 @@ const Navbar = () => {
                   to={section}
                   smooth={true}
                   spy={isMounted} // Only enable spy after mount
-                  offset={0} // Adjust this based on your header height
+                  offset={70} // Adjust this based on your header height
                   duration={500}
                   activeClass="active-nav-item"
                   onClick={() => setTimeout(() => setIsOpen(false), 400)}
