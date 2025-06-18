@@ -1,6 +1,6 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
-import { SiGooglecolab } from "react-icons/si";
+import { SiGooglecolab, SiStreamlit } from "react-icons/si";
 
 const ProjectCard = ({ project }) => {
   return (
@@ -10,11 +10,6 @@ const ProjectCard = ({ project }) => {
       bg-gradient-to-br from-white/60 via-white/40 to-white/30 dark:from-gray-800/60 dark:via-gray-700/40 dark:to-gray-600/30
       border border-white/20 backdrop-blur-xl hover:backdrop-blur-2xl"
     >
-      {/* Inner glow layer */}
-      <div
-        className="absolute inset-0 rounded-xl bg-white/10 dark:bg-gray-300/5 
-        blur-xl opacity-0 group-hover:opacity-20 transition-all duration-500 pointer-events-none"
-      />
       {/* Image */}
       <img
         src={project.image}
@@ -22,7 +17,6 @@ const ProjectCard = ({ project }) => {
         className="h-44.5 w-full object-cover"
       />
 
-      {/* Content */}
       <div className="p-4">
         <h3 className="text-lg font-bold text-gray-800 dark:text-white">
           {project.title}
@@ -31,7 +25,7 @@ const ProjectCard = ({ project }) => {
           {project.description}
         </p>
 
-        {/* Tech + GitHub row */}
+        {/* Tech + Links */}
         <div className="mt-4 flex items-center justify-between flex-wrap gap-2">
           <div className="flex flex-wrap gap-2">
             {project.tech.map((tech, index) => (
@@ -44,21 +38,37 @@ const ProjectCard = ({ project }) => {
             ))}
           </div>
 
-          <a
-            href={project.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`text-3xl transition ${
-              project.linkType === "colab"
-                ? "text-[#F9AB00] hover:text-yellow-400"
-                : "text-purple-500 hover:text-purple-400"
-            }`}
-            title={`View on ${
-              project.linkType === "colab" ? "Google Colab" : "GitHub"
-            }`}
-          >
-            {project.linkType === "colab" ? <SiGooglecolab /> : <FaGithub />}
-          </a>
+          <div className="flex items-center gap-3 text-3xl">
+            {/* Main Repo/Colab */}
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`transition ${
+                project.linkType === "colab"
+                  ? "text-[#F9AB00] hover:text-yellow-400"
+                  : "text-purple-500 hover:text-purple-400"
+              }`}
+              title={`View on ${
+                project.linkType === "colab" ? "Google Colab" : "GitHub"
+              }`}
+            >
+              {project.linkType === "colab" ? <SiGooglecolab /> : <FaGithub />}
+            </a>
+
+            {/* Deployed App Link (optional) */}
+            {project.demo && (
+              <a
+                href={project.demo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#FF4B4B] hover:opacity-80 text-3xl"
+                title="View Live"
+              >
+                <SiStreamlit />
+              </a>
+            )}
+          </div>
         </div>
       </div>
     </div>

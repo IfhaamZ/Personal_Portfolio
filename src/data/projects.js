@@ -54,6 +54,17 @@ const projects = [
     image: "/images/IOT.png",
     linkType: "github",
   },
+  {
+    title: "Fake News Classifier",
+    description:
+      "An app that detects fake news in real-time using article headlines or content. The app compares the performance of 3 different models — Logistic Regression, SVM, and BERT-based embeddings. It provides instant predictions and confidence scores, to highlight accuracy and reliability. ",
+    tech: ["Python", "Pandas", "Sklearn", "Seaborn"],
+    github:
+      "https://colab.research.google.com/drive/1Zgx9q50UeDHpIS8KjJdv0gx3RMLysYyM",
+    image: "/images/FND.png",
+    linkType: "colab",
+    demo: "https://fakenewsdetector-zmeo3wgwdqexnkrmfsb7hl.streamlit.app/",
+  },
 ];
 
 export default projects;
