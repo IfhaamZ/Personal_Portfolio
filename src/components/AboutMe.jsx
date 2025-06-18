@@ -25,9 +25,12 @@ const AboutMe = () => {
             <br />
             On the development side, I build full-stack applications from the
             ground up — front-end, back-end, databases — all with an eye for
-            clean code and even cleaner UX. I’m big on UI/UX design and product
+            clean code and even cleaner UX. I'm big on UI/UX design and product
             thinking, always asking: How does this feel for the user? What
-            problem are we solving? At the same time, I’m just as passionate
+            problem are we solving?
+            <br />
+            <br />
+            At the same time, I'm just as passionate
             about data. I love diving into messy datasets, finding patterns, and
             using machine learning to build smart systems that adapt and
             improve. Whether it's predictive models, dashboards, or data-driven
