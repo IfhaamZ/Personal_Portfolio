@@ -4,6 +4,7 @@ import HorizontalProjectScroll from "./components/ProjectScrollBanner";
 import Hero from "./components/Hero";
 import AboutMe from "./components/AboutMe";
 import SkillsGrid from "./components/SkillsGrid";
+import Experience from "./components/Experience";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <AboutMe />
       <HorizontalProjectScroll />
       <SkillsGrid />
+      <Experience/> 
     </div>
   );
 }

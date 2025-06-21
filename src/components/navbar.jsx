@@ -3,7 +3,7 @@ import { Link as ScrollLink } from "react-scroll";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 
-const sections = ["home", "about", "projects", "skills"];
+const sections = ["home", "about", "projects", "skills", "experience"];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +19,7 @@ const Navbar = () => {
       {/* Toggle Button */}
       <button
         onClick={() => setIsOpen((prev) => !prev)}
-        className={`absolute w-14 h-14 flex items-center justify-center rounded-full transition-all duration-300 
+        className={`absolute w-14 h-14 flex items-center justify-center rounded-full transition-all duration-300  
           ${
             isOpen
               ? "bg-gradient-to-br from-rose-500 to-purple-600 hover:from-rose-600 hover:to-purple-700"
