@@ -14,7 +14,7 @@ const experiences = [
       "Refactored code into modular components, enhancing system maintainability and testability.",
       "Collaborated in code reviews and contributed to alignment between engineering tasks and project goals.",
     ],
-    location: "Sydney, Australia",
+    location: "Remote, Singapore",
     iconPath: "/images/WORK.png",
   },
 ];
