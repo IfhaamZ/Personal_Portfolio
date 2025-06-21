@@ -59,9 +59,27 @@
     }
   }
 
+  @keyframes spin-slow {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .animate-spin-slow {
+    animation: spin-slow 8s linear infinite;
+  }
+
+
   .active-nav-item {
+    background: rgba(255, 255, 255, 0.1);
     color: white;
-    background-color: rgba(255, 255, 255, 0.3);
-    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05);
-    font-weight: 600;
+    box-shadow: inset 0 0 8px rgba(192, 132, 252, 0.3);
+  }
+  
+  .container {
+    width: 100%;
+    padding: 0 1rem;
+    margin: 0 auto;
   }

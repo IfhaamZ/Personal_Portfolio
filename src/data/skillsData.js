@@ -16,6 +16,18 @@ export const skills = {
     { name: "C++", iconPath: "/assets/skills/cplusplus.svg" },
     { name: "Spring Boot", iconPath: "/assets/skills/springboot.svg" },
   ],
+  Libraries: [
+    { name: "Pandas", iconPath: "/assets/skills/pandas.svg" },
+    { name: "Pytorch", iconPath: "/assets/skills/pytorch.svg" },
+    { name: "Scikit-learn", iconPath: "/assets/skills/scikit-learn.svg" },
+    { name: "TensorFlow", iconPath: "/assets/skills/tensorflow.svg" },
+    { name: "Numpy", iconPath: "/assets/skills/numpy.svg" },
+    {
+      name: "OpenCV",
+      iconPath: "/assets/skills/opencv.svg",
+    },
+  ],
+  Database: [{ name: "MySQL", iconPath: "/assets/skills/mysql.svg" }],
   Frameworks: [
     {
       name: ".NET",
@@ -28,7 +40,6 @@ export const skills = {
     { name: "React", iconPath: "/assets/skills/react.svg" },
     { name: "Tailwind CSS", iconPath: "/assets/skills/tailwind.svg" },
   ],
-  Database: [{ name: "MySQL", iconPath: "/assets/skills/mysql.svg" }],
   Cloud: [
     { name: "AWS", iconPath: "/assets/skills/aws.svg" },
     { name: "Docker", iconPath: "/assets/skills/docker.svg" },
@@ -37,16 +48,5 @@ export const skills = {
   Tools: [
     { name: "Git", iconPath: "/assets/skills/git.svg" },
     { name: "Postman", iconPath: "/assets/skills/postman.svg" },
-  ],
-  Libraries: [
-    { name: "Pandas", iconPath: "/assets/skills/pandas.svg" },
-    { name: "Pytorch", iconPath: "/assets/skills/pytorch.svg" },
-    { name: "Scikit-learn", iconPath: "/assets/skills/scikit-learn.svg" },
-    { name: "TensorFlow", iconPath: "/assets/skills/tensorflow.svg" },
-    { name: "Numpy", iconPath: "/assets/skills/numpy.svg" },
-    {
-      name: "OpenCV",
-      iconPath: "/assets/skills/opencv.svg",
-    },
   ],
 };

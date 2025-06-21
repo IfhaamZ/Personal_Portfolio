@@ -21,7 +21,7 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <section id="experience" className="w-full pb-20 pt-0 px-6">
+    <section id="experience" className="w-full pb-20 pt-10 px-6">
       <SectionTitle
         title="Work Experience"
         showDecorations={true}
